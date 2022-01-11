@@ -42,11 +42,11 @@
             <!-- end burger menu -->
             <!-- start menu -->
             <div class="nav-links">
-                <a href="#Home" target="_blank">Home</a>
+                <a href="#Home" target="_self">Home</a>
                 <a href="#About" target="_self">About me</a>
                 <a href="#Works" target="_self">My Works</a>
-                <a href="Services" target="_self">My Services</a>
-                <a href="Contuct" target="_blank">Contuct Me</a>
+                <a href="#Services" target="_self">My Services</a>
+                <a href="#Contuct" target="_self">Contuct Me</a>
             </div>
             <!-- end menu -->
         </section>
@@ -54,7 +54,7 @@
     </header>
     <!-- body -->
     <main>
-        <section class="cover">
+        <section class="cover" id="Home">
 
 
             <div class="makeflex">
@@ -92,7 +92,7 @@
 
 
             <!--my-info-->
-            <div class="banner">
+            <div class="banner" id="About">
                 <div class="work-title ">
                     <h2>About <span>Me</span></h2>
                 </div>
@@ -144,7 +144,7 @@ EnasHameedQ ايناس حميد القعادي</i></a>
         </section>
 
         <!-- Start works section -->
-        <section class="works ">
+        <section class="works " id="Works">
             <div class="work-title ">
                 <h2>My <span>Works</span></h2>
             </div>
@@ -204,9 +204,10 @@ EnasHameedQ ايناس حميد القعادي</i></a>
         </section>
         <!-- End works section -->
         <!-- start services -->
-        <section class="services ">
+        <section class="service ">
+            
 
-            <div class="work-title ">
+            <div class="work-title " id="Services ">
                 <h2>My <span>Services</span></h2>
 
             </div>
@@ -322,8 +323,8 @@ EnasHameedQ ايناس حميد القعادي</i></a>
         <!-- end edu/exper -->
         <!--
          start contuct me   -->
-        <section class="contuctme ">
-            <div class="form ">
+        <section class="contuctme " >
+            <div class="form " id="Contuct ">
                 <form action="# " method="post ">
                     <label for="fname ">First name:</label><br>
                     <input type="text " id="fname " value="mohameed ">

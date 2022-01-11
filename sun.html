@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        @keyframes move-sun {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(90deg);
+            }
+        }
+        
+        @keyframes remove-sun {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(-180deg);
+            }
+        }
+        
+        .sun {
+            position: relative;
+            width: 400px;
+            height: 400px;
+            margin: 200px;
+            animation: move-sun 5s forwards;
+        }
+        
+        .sun::before {
+            content: "";
+            position: absolute;
+            top: -25px;
+            left: -25px;
+            width: 50px;
+            height: 50px;
+            background-color: rgb(179, 85, 32);
+            border-radius: 50%;
+        }
+        
+        .sunshin {
+            position: relative;
+            width: 400px;
+            height: 400px;
+            margin: 200px;
+            animation: remove-sun 5s forwards;
+        }
+        
+        .sunshin::before {
+            content: "";
+            position: absolute;
+            top: 25px;
+            right: 25px;
+            width: 50px;
+            height: 50px;
+            background-color: rgb(247, 212, 16);
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sun">
+
+    </div>
+
+    <div class="sunshin" onclick="send">
+
+    </div>
+
+</body>
+
+</html>
