@@ -166,7 +166,7 @@ section.aboutme {
     align-content: flex-start;
     flex-wrap: wrap;
     padding: 30px;
-    background-color: #d1c9e8;
+    /* background-color: #d1c9e8; */
 }
 
 .social_header {
@@ -187,7 +187,7 @@ section.aboutme {
 
 .item p {
     padding-bottom: 10px;
-    width: 300px;
+    width: 350px;
 }
 
 .banner {
@@ -197,6 +197,7 @@ section.aboutme {
     justify-content: space-between;
     align-content: center;
     align-items: flex-start;
+    margin-top: -225px;
 }
 
 .cardss {
@@ -280,7 +281,7 @@ section.aboutme {
 
 .work-title {
     text-align: center;
-    padding: 100px 0px 50px 0px;
+    padding: 100px 0px 50px 80px;
     font-family: cursive;
 }
 
@@ -375,33 +376,42 @@ section.aboutme {
 /*  */
 
 .edEx {
-    border-radius: 20px;
-    background-color: #e8e4f4;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    margin: 30px;
+    padding: 20px 50px;
+    /* border-radius: 170px; */
+    /* background-color: #e8e4f4; */
+    display: grid;
+    grid-template-columns: 2fr 2fr;
 }
 
-.Exp {
-    padding: 20px;
-    /* border-color: #baaedd; */
-    /* border: 2px solid; */
-    background-color: #745dba6e;
-    border-radius: 25px;
-    /* margin-top: 30px; */
-    margin: 30px;
-}
-
+.Exp,
 .Edu {
     padding: 20px;
     /* border-color: #baaedd; */
     /* border: 2px solid; */
     background-color: #745dba6e;
     border-radius: 25px;
-    margin: 30px;
-    /* margin-right: 30px; */
+    /* margin-top: 30px; */
+    margin: 10px;
+    /* width: 400px; */
 }
+
+h5 {
+    font-size: 20px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+
+/* 
+.Edu {
+  
+    background-color: #745dba6e;
+    border-radius: 25px;
+    margin: 30px;
+   
+} */
 
 
 /* end edu/exo */
