@@ -185,7 +185,7 @@
                          }
                          .works {
                              margin: 10px 20px;
-                             width: 100%;
+                             /* width: 100%; */
                              grid-template-columns: 2fr;
                              display: grid;
                              background-color: #e8e4f4;
