@@ -315,7 +315,6 @@
                          .title {
                              text-align: center;
                              padding: 0px 0px 40px 75px;
-                             font-family: cursive;
                          }
                          .works {
                              background-color: #e8e4f4;
@@ -345,7 +344,6 @@
                          .banner .work-title {
                              text-align: center;
                              padding: 0px 0px 0px 105px;
-                             font-family: cursive;
                          }
                          .banner {
                              display: flex;

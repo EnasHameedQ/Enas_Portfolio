@@ -1,9 +1,71 @@
 * {
     box-sizing: border-box;
-    font-family: cursive;
     margin: 0px;
     padding: 0px;
 }
+
+
+/* start darkmode */
+
+html {
+    --bg: #FCFCFC;
+}
+
+body {
+    background-color: var(--bg);
+}
+
+
+/* darkmode */
+
+.toggle input[type=checkbox] {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+.toggle label {
+    margin-top: -30px;
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 52px;
+    height: 27px;
+    background: #baaedd;
+    float: right;
+    border-radius: 100px;
+    position: relative;
+}
+
+.toggle label::after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 90px;
+    transition: 0.3s;
+}
+
+
+/*toggle bg color after dark */
+
+.toggle input:checked+label {
+    background-color: #8a8a8a;
+}
+
+.toggle input:checked+label::after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+}
+
+.toggle label:active:after {
+    width: 45px;
+}
+
+
+/* end darkmode */
 
 @font-face {
     font-family: Scriptina;
@@ -34,11 +96,17 @@ section.cardss {
 /* nav */
 
 .nav {
+    display: flex;
     z-index: 1;
     height: 64px;
     width: 100%;
     background-color: #745dba;
     position: fixed;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .nav>.nav-header {
@@ -56,7 +124,6 @@ section.cardss {
 .name {
     font-size: 22px;
     color: #edefee;
-    font-family: cursive;
     letter-spacing: 5px;
 }
 
@@ -287,7 +354,6 @@ section.aboutme {
 .work-title {
     text-align: center;
     padding: 20px 0px 40px 0px;
-    font-family: cursive;
 }
 
 
@@ -343,7 +409,6 @@ section.aboutme {
 }
 
 .flip-card-front h5 {
-    font-family: cursive;
     font-weight: bold;
     font-size: 16px;
     padding-bottom: 15px;
