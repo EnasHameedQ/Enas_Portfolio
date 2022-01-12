@@ -67,12 +67,7 @@ body {
 
 /* end darkmode */
 
-@font-face {
-    font-family: Scriptina;
-    src: url(SCRIPTIN.ttf);
-}
-
- :root {
+:root {
     --primery-color: #745dba;
     --secondery-color: #e8e4f4;
     --third-color: #edefee;
