@@ -7,11 +7,11 @@ const getStyle = (element, style) =>
     .getPropertyValue(style);
 
 const initialColors = {
-    bg: getStyle(html, "--bg"),
+    bg: getStyle(html, "--forth-color"),
 }
 
 const darkMode = {
-    bg: "#8a8a8a", // override styles here
+    bg: "#6c6876", // override styles here
 }
 
 const transformKey = key =>
