@@ -333,19 +333,38 @@ EnasHameedQ ايناس حميد القعادي</i></a>
 
             </div>
                             <form action="# " method="post ">
-                                <label for="fname ">First name:</label><br>
-                                <input type="text " id="fname " placeholder=" first-name " value=" ">
-                                <br><br>
-                                <label for="lname ">last name:</label><br>
-                                <input type="text " id="lname " placeholder=" last-name " value=" ">
-                                <br><br>
-                                <label for="email ">email:</label><br>
-                                <input type="email " id="email " value=" ">
-                                <br><br>
-                                <label for="textarea ">message:</label><br>
-                                <textarea class="form-control " placeholder=" " name=" " id="textarea " rows="3 "></textarea>
+                                 <div class="form-group ">
+            <label for="contact-name ">Name</label>
+            <input type="text " class="form-control " id="contact-name " name="name " placeholder="Enter your name.. " onkeyup='validateName()'>
+            <span class='error-message' id='name-error'></span>
+        </div>
+        <br><br>
+        <div class="form-group ">
+            <label for="contact-age ">Age</label>
+            <input type="datetime-local " lass=" form-control " id="contact-age " name="age " placeholder="Enter your age.. " onkeyup='validateAge()'>
+            <span class='error-message' id='age-error'></span>
+        </div>
+        <br><br>
+        <div class="form-group ">
+            <label for="contact-phone ">Phone Number</label>
+            <input type="tel " class="form-control " id="contact-phone " name="phone " placeholder="Ex: 77345778 " value=777 onkeyup=' validatePhone() '>
+            <span class='error-message ' id='phone-error '></span>
+        </div>
+<br><br>
+        <div class=" form-group ">
+            <label for="contact-email ">Email address</label>
+            <input type="text " class="form-control " id="contact-email " name="email " placeholder="Enter Email " onkeyup='validateEmail() '>
+            <span class='error-message ' id='email-error '></span>
+        </div>
+<br><br>
+        <div class="form-group ">
+            <label for='contactMessage '>Your Message</label>
+            <textarea class="form-control " rows="5 " id='contact-message ' name='message ' placeholder="Enter a brief message " onkeyup='validateMessage() '></textarea>
+            <span class='error-message ' id='message-error '></span>
+        </div>
                                 <br> <br>
-                                <button type="submit " class="registerbtn ">send</button>
+                                <button onclick='return validateForm() ' class="btn btn-default ">Submit</button>
+        <span class='error-message ' id='submit-error '></span>
                             </form>
                         </div>
                         <div class="con ">
