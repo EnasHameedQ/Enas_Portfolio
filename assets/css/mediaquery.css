@@ -14,10 +14,6 @@
                                  height: 50px;
                                  padding: 13px;
                              }
-                             .nav>.nav-btn>label:hover,
-                             .nav #nav-check:checked~.nav-btn>label {
-                                 background-color: rgba(0, 0, 0, 0.3);
-                             }
                              .nav>.nav-btn>label>span {
                                  display: block;
                                  width: 25px;
@@ -28,7 +24,6 @@
                                  position: absolute;
                                  display: block;
                                  width: 100%;
-                                 background-color: #745dba;
                                  height: 0px;
                                  transition: all 0.3s ease-in;
                                  overflow-y: hidden;
@@ -52,11 +47,7 @@
                              }
                              .copy-right>p,
                              .copy-right i {
-                                 color: #edefee;
                                  font-size: 12px;
-                             }
-                             .social {
-                                 color: white;
                              }
                              .con {
                                  margin: 20px;
@@ -88,10 +79,6 @@
                                  height: 50px;
                                  padding: 13px;
                              }
-                             .nav>.nav-btn>label:hover,
-                             .nav #nav-check:checked~.nav-btn>label {
-                                 background-color: rgba(0, 0, 0, 0.3);
-                             }
                              .nav>.nav-btn>label>span {
                                  display: block;
                                  width: 25px;
@@ -102,7 +89,6 @@
                                  position: absolute;
                                  display: block;
                                  width: 100%;
-                                 background-color: #745dba;
                                  height: 0px;
                                  transition: all 0.3s ease-in;
                                  overflow-y: hidden;
@@ -184,7 +170,6 @@
                                  margin: 2px 0px;
                                  grid-template-columns: 1fr;
                                  display: grid;
-                                 background-color: #e8e4f4;
                                  height: auto;
                                  padding-bottom: 30px;
                              }
@@ -211,7 +196,6 @@
                                  width: 200px;
                              }
                              .social {
-                                 color: white;
                                  margin-right: 0px;
                              }
                              .cont {
@@ -229,7 +213,6 @@
                                  padding-left: 30px;
                                  padding-right: 30px;
                                  display: flex;
-                                 background-color: #745dba;
                                  justify-content: space-around;
                                  height: 100px;
                                  align-items: center;
@@ -271,16 +254,12 @@
                              }
                              .flip-card {
                                  margin: 15px;
-                                 background-color: transparent;
                                  width: 260px;
                                  height: 200px;
-                                 border: 1px solid #e8e4f4;
-                                 perspective: 1000px;
                              }
                              .card1 {
                                  text-align: center;
                                  height: 155px;
-                                 background-color: #e8e4f4;
                                  padding: 5px;
                                  margin: 10px;
                                  font-size: 14px;
@@ -296,15 +275,6 @@
                              }
                              .edEx {
                                  padding: 20px 50px;
-                                 /* border-radius: 170px; */
-                                 /* background-color: #e8e4f4; */
-                                 display: grid;
-                                 grid-template-columns: 1fr;
-                             }
-                             .edEx {
-                                 padding: 20px 50px;
-                                 /* border-radius: 170px; */
-                                 /* background-color: #e8e4f4; */
                                  display: grid;
                                  grid-template-columns: 1fr;
                              }
@@ -332,17 +302,12 @@
                                  padding: 0px 0px 40px 75px;
                              }
                              .works {
-                                 background-color: #e8e4f4;
                                  height: auto;
                                  padding: 20px;
                              }
                              .flip-card {
                                  margin: 15px;
-                                 background-color: transparent;
-                                 /* width: 300px; */
                                  height: 200px;
-                                 border: 1px solid #e8e4f4;
-                                 perspective: 1000px;
                              }
                              .banner {
                                  display: flex;
@@ -371,7 +336,6 @@
                              }
                              .works {
                                  display: grid;
-                                 background-color: #e8e4f4;
                                  height: auto;
                                  justify-items: center;
                                  justify-content: center;
