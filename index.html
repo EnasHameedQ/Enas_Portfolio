@@ -76,66 +76,7 @@
                         </a>
                     </h2>
                 </div>
-                <script>
-                    var TxtType = function(el, toRotate, period) {
-                        this.toRotate = toRotate;
-                        this.el = el;
-                        this.loopNum = 0;
-                        this.period = parseInt(period, 10) || 2000;
-                        this.txt = '';
-                        this.tick();
-                        this.isDeleting = false;
-                    };
 
-                    TxtType.prototype.tick = function() {
-                        var i = this.loopNum % this.toRotate.length;
-                        var fullTxt = this.toRotate[i];
-
-                        if (this.isDeleting) {
-                            this.txt = fullTxt.substring(0, this.txt.length - 1);
-                        } else {
-                            this.txt = fullTxt.substring(0, this.txt.length + 1);
-                        }
-
-                        this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
-
-                        var that = this;
-                        var delta = 200 - Math.random() * 100;
-
-                        if (this.isDeleting) {
-                            delta /= 2;
-                        }
-
-                        if (!this.isDeleting && this.txt === fullTxt) {
-                            delta = this.period;
-                            this.isDeleting = true;
-                        } else if (this.isDeleting && this.txt === '') {
-                            this.isDeleting = false;
-                            this.loopNum++;
-                            delta = 500;
-                        }
-
-                        setTimeout(function() {
-                            that.tick();
-                        }, delta);
-                    };
-
-                    window.onload = function() {
-                        var elements = document.getElementsByClassName('typewrite');
-                        for (var i = 0; i < elements.length; i++) {
-                            var toRotate = elements[i].getAttribute('data-type');
-                            var period = elements[i].getAttribute('data-period');
-                            if (toRotate) {
-                                new TxtType(elements[i], JSON.parse(toRotate), period);
-                            }
-                        }
-                        // INJECT CSS
-                        var css = document.createElement("style");
-                        css.type = "text/css";
-                        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
-                        document.body.appendChild(css);
-                    };
-                </script>
                 <!-- end important -->
                 <div class="card3 1">
                     <div class="card_image2"> <img src="assets/img/bg/undraw_devices_re_dxae.svg" /> </div>
@@ -167,11 +108,7 @@
                     <p class="">I'm Enas Hameed Yahya Al Qa'adi .</p>
                     <p class=""> FULL STACK "Web design & programmer".
 
-                        <p>i am passionate about my work. Because I love what I do .I am ambitious and driven. I thrive on challenge and constantly set goals for myself, so I have something to strive toward. I’m a people-person. I love meeting new people
-                            and learning about their lives and their backgrounds. I can almost always find common ground with strangers, and I like making people feel comfortable in my presence. I find this skill is especially helpful when kicking off
-                            projects with new clients. am highly organized. I always take notes, and I use a series of tools to help myself stay on top of deadlines. I like to keep a clean workspace and create a logical filing method so I’m always able
-                            to find what I need. I find this increases efficiency and helps the rest of the team stay on track, too. I am an excellent communicator. I pride myself on making sure people have the right information because it drives better
-                            results.
+                        <p>I am passionate about my work. Because I love what I do .I am ambitious and driven. I thrive on challenge and constantly set goals for myself, so I have something to strive toward.
 
 
 
@@ -391,6 +328,10 @@ EnasHameedQ ايناس حميد القعادي</i></a>
         <!--  start contuct me   -->
         <section class="contuctme "  id="call ">
             <div class="form " >
+                <div class="work-title " id="ser ">
+                <h2>Keep us<span> in touch</span> 😄</h2>
+
+            </div>
                             <form action="# " method="post ">
                                 <label for="fname ">First name:</label><br>
                                 <input type="text " id="fname " placeholder=" first-name " value=" ">
@@ -409,21 +350,53 @@ EnasHameedQ ايناس حميد القعادي</i></a>
                         </div>
                         <div class="con ">
                             <div class="cont ">
-                                <a href=" alqaadienas@gmail.com "></a> <i class="material-icons ">mail_outline </i> alqaadienas@gmail.com
+                                <a href=" alqaadienas@gmail.com "> <i class="material-icons ">mail_outline </i> alqaadienas@gmail.com
                                 </a>
                             </div>
                             <div class="cont ">
 
-                                <a href="# "></a><i class="material-icons ">call</i> +967 772650028</a>
+                                <a href="# "><i class="material-icons ">call</i> +967 772650028</a>
                             </div>
                         </div>
+
+                        <!-- <div class="move_img "><img src="assets/img/bg/undraw_web_devices_re_m8sc.svg " id='i1'>
+                            <br><br><br><br>
+                            <input type=button onClick=timer() value='Start'>
+                            <input type=button onClick=reset1() value='Reset'>
+                            <div id='msg'></div>
+                        </div> -->
         </section>
+       
         <!-- end contuct me -->
+
+        <section class=" move ">
+            <!-- start oving img -->
+  <script type="text/javascript ">
+        var imgObj = null;
+
+        function init() {
+            imgObj = document.getElementById('myImage');
+            imgObj.style.position = 'relative';
+            imgObj.style.left = '0px';
+        }
+
+        function moveRight() {
+            imgObj.style.left = parseInt(imgObj.style.left) + 10 + 'px';
+        }
+        window.onload = init;
+    </script>
+      <form>
+        <img id="myImage " src="assets/img/bg/undraw_web_devices_re_m8sc.svg " height="200 " width="300 " style="position: relative; " />
+        <p>Click button below to move the image to right</p>
+        <input type="button " value="Click Me " onclick="moveRight(); " />
+    </form>
+    <!-- end moving img -->
+        </section>
     </main>
     <footer>
         <div class="copy-right ">
             <p>
-                Copyright <i class="fa fa-copyright " aria-hidden="true "></i>2022.All Rghits Resorved.
+                Copyright <i class="fa fa-copyright " aria-hidden="true "></i>2022.All Rghits Resorved to EnasHQ.
             </p>
         </div>
         <div class="social ">
@@ -434,11 +407,12 @@ EnasHameedQ ايناس حميد القعادي</i></a>
     </footer>
 
 
-   
+
 
     <!-- JS Plugins  -->
-
-    <!-- <script src="assets/js/darkmode.js "></script> -->
+    <!-- <script src="assets/js/move_imag.js "></script> -->
+    <script src="assets/js/darkmode.js "></script>
+    <script src="assets/js/typing.js "></script>
 </body>
 
 </html>

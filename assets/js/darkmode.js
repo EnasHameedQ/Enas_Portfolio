@@ -7,7 +7,7 @@ const getStyle = (element, style) =>
     .getPropertyValue(style);
 
 const initialColors = {
-    bg: getStyle(html, "--forth-color"),
+    bg: getStyle(html, "--bg"),
 }
 
 const darkMode = {
