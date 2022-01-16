@@ -1,26 +1,26 @@
                          @media (min-width:0px) and (max-width:299px) {
-                             .nav {
+                             nav {
                                  z-index: 1;
                              }
-                             .nav>.nav-btn {
+                             nav>.nav-btn {
                                  display: inline-block;
                                  position: absolute;
                                  right: 0px;
                                  top: 0px;
                              }
-                             .nav>.nav-btn>label {
+                             nav>.nav-btn>label {
                                  display: inline-block;
                                  width: 50px;
                                  height: 50px;
                                  padding: 13px;
                              }
-                             .nav>.nav-btn>label>span {
+                             nav>.nav-btn>label>span {
                                  display: block;
                                  width: 25px;
                                  height: 10px;
                                  border-top: 2px solid #eee;
                              }
-                             .nav>.nav-links {
+                             nav>.nav-links {
                                  position: absolute;
                                  display: block;
                                  width: 100%;
@@ -30,15 +30,15 @@
                                  top: 60px;
                                  left: 245px;
                              }
-                             .nav>.nav-links>a {
+                             nav>.nav-links>a {
                                  display: block;
                                  width: 100%;
                              }
-                             /* .nav>#nav-check:checked~.nav-links {
+                             /* nav>#nav-check:checked~.nav-links {
         height: calc(100vh - 50px);
         overflow-y: auto;
     } */
-                             .nav>#nav-check:checked~.nav-links {
+                             nav>#nav-check:checked~.nav-links {
                                  height: calc(35vh - 50px);
                                  overflow-y: auto;
                              }
@@ -61,31 +61,30 @@
                                  text-indent: -9999px;
                                  width: 40px;
                                  height: 25px;
-                                 background: #baaedd;
                                  float: right;
                                  border-radius: 100px;
                                  position: relative;
                                  margin-top: -10px;
                              }
-                             .nav>.nav-btn {
+                             nav>.nav-btn {
                                  display: inline-block;
                                  position: absolute;
                                  right: 0px;
                                  top: 0px;
                              }
-                             .nav>.nav-btn>label {
+                             nav>.nav-btn>label {
                                  display: inline-block;
                                  width: 50px;
                                  height: 50px;
                                  padding: 13px;
                              }
-                             .nav>.nav-btn>label>span {
+                             nav>.nav-btn>label>span {
                                  display: block;
                                  width: 25px;
                                  height: 10px;
                                  border-top: 2px solid #eee;
                              }
-                             .nav>.nav-links {
+                             nav>.nav-links {
                                  position: absolute;
                                  display: block;
                                  width: 100%;
@@ -94,8 +93,9 @@
                                  overflow-y: hidden;
                                  top: 47px;
                                  left: 0px;
+                                 background-color: #83c4be;
                              }
-                             .nav>.nav-links>a {
+                             nav>.nav-links>a {
                                  display: block;
                                  width: 100%;
                              }
@@ -234,7 +234,7 @@
                                  width: 15px;
                                  height: 15px;
                              }
-                             .nav>.nav-links {
+                             nav>nav-links {
                                  display: inline;
                                  float: right;
                                  font-size: 14px;

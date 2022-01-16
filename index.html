@@ -24,7 +24,7 @@
 
     <header>
         <!-- nav -->
-        <section class="nav">
+        <nav>
             <!-- start burger menu -->
             <input type="checkbox" id="nav-check">
             <div class="nav-header">
@@ -42,10 +42,10 @@
             </div>
             <!-- end burger menu -->
             <!-- start darkmode -->
-            <div class="toggle">
+            <!-- <div class="toggle">
                 <input id="switch" type="checkbox" name="theme">
                 <label for="switch">Toggle</label>
-            </div>
+            </div> -->
             <!-- end darkmode -->
             <!-- start menu -->
             <div class="nav-links">
@@ -57,7 +57,12 @@
             </div>
 
             <!-- end menu -->
-        </section>
+            <form class="seach">
+
+                <input type="text" name=" search " placeholder="search here">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </nav>
         <!-- end nav -->
     </header>
     <!-- body -->
@@ -333,86 +338,105 @@ EnasHameedQ ايناس حميد القعادي</i></a>
 
             </div>
                             <form action="# " method="post ">
-                                <label for="fname ">First name:</label><br>
-                                <input type="text " id="fname " placeholder=" first-name " value=" ">
-                                <br><br>
-                                <label for="lname ">last name:</label><br>
-                                <input type="text " id="lname " placeholder=" last-name " value=" ">
-                                <br><br>
-                                <label for="email ">email:</label><br>
-                                <input type="email " id="email " value=" ">
-                                <br><br>
-                                <label for="textarea ">message:</label><br>
-                                <textarea class="form-control " placeholder=" " name=" " id="textarea " rows="3 "></textarea>
+    <div class="form-group ">
+            <label for="contact-name ">Name</label>
+            <input type="text " class="form-control " id="contact-name " name="name " placeholder="Enter your name.. " onkeyup='validateName()'>
+            <span class='error-message' id='name-error'></span>
+        </div>
+        <br><br>
+        <div class="form-group ">
+            <label for="contact-age ">Age</label>
+            <input type="datetime-local " lass=" form-control " id="contact-age " name="age " placeholder="Enter your age.. " onkeyup='validateAge()'>
+            <span class='error-message' id='age-error'></span>
+        </div>
+        <br><br>
+        <div class="form-group ">
+            <label for="contact-phone ">Phone Number</label>
+            <input type="tel " class="form-control " id="contact-phone " name="phone " placeholder="Ex: 77345778 " value=777 onkeyup=' validatePhone() '>
+            <span class='error-message ' id='phone-error '></span>
+        </div>
+<br><br>
+        <div class=" form-group ">
+            <label for="contact-email ">Email address</label>
+            <input type="text " class="form-control " id="contact-email " name="email " placeholder="Enter Email " onkeyup='validateEmail() '>
+            <span class='error-message ' id='email-error '></span>
+        </div>
+<br><br>
+        <div class="form-group ">
+            <label for='contactMessage '>Your Message</label>
+            <textarea class="form-control " rows="5 " id='contact-message ' name='message ' placeholder="Enter a brief message " onkeyup='validateMessage() '></textarea>
+            <span class='error-message ' id='message-error '></span>
+        </div>
                                 <br> <br>
-                                <button type="submit " class="registerbtn ">send</button>
-                            </form>
-                        </div>
-                        <div class="con ">
-                            <div class="cont ">
-                                <a href=" alqaadienas@gmail.com "> <i class="material-icons ">mail_outline </i> alqaadienas@gmail.com
-                                </a>
-                            </div>
-                            <div class="cont ">
+                                <button onclick='return validateForm() ' class="btn btn-default ">Submit</button>
+                <span class='error-message ' id='submit-error '></span>
+            </form>
+            </div>
+            <div class="con ">
+                <div class="cont ">
+                    <a href=" alqaadienas@gmail.com "> <i class="material-icons ">mail_outline </i> alqaadienas@gmail.com
+                    </a>
+                </div>
+                <div class="cont ">
 
-                                <a href="# "><i class="material-icons ">call</i> +967 772650028</a>
-                            </div>
-                        </div>
+                    <a href="# "><i class="material-icons ">call</i> +967 772650028</a>
+                </div>
+            </div>
 
-                        <!-- <div class="move_img "><img src="assets/img/bg/undraw_web_devices_re_m8sc.svg " id='i1'>
+            <!-- <div class="move_img "><img src="assets/img/bg/undraw_web_devices_re_m8sc.svg " id='i1'>
                             <br><br><br><br>
                             <input type=button onClick=timer() value='Start'>
                             <input type=button onClick=reset1() value='Reset'>
                             <div id='msg'></div>
                         </div> -->
         </section>
-       
+
         <!-- end contuct me -->
 
         <section class=" move ">
             <!-- start oving img -->
-  <script type="text/javascript ">
-        var imgObj = null;
+            <script type="text/javascript ">
+                var imgObj = null;
 
-        function init() {
-            imgObj = document.getElementById('myImage');
-            imgObj.style.position = 'relative';
-            imgObj.style.left = '0px';
-        }
+                function init() {
+                    imgObj = document.getElementById('myImage');
+                    imgObj.style.position = 'relative';
+                    imgObj.style.left = '0px';
+                }
 
-        function moveRight() {
-            imgObj.style.left = parseInt(imgObj.style.left) + 10 + 'px';
-        }
-        window.onload = init;
-    </script>
-      <form>
-        <img id="myImage " src="assets/img/bg/undraw_web_devices_re_m8sc.svg " height="200 " width="300 " style="position: relative; " />
-        <p>Click button below to move the image to right</p>
-        <input type="button " value="Click Me " onclick="moveRight(); " />
-    </form>
-    <!-- end moving img -->
+                function moveRight() {
+                    imgObj.style.left = parseInt(imgObj.style.left) + 10 + 'px';
+                }
+                window.onload = init;
+            </script>
+            <form>
+                <img id="myImage " src="assets/img/bg/undraw_web_devices_re_m8sc.svg " height="200 " width="300 " style="position: relative; " />
+                <p>Click button below to move the image to right</p>
+                <input type="button " value="Click Me " onclick="moveRight(); " />
+            </form>
+            <!-- end moving img -->
         </section>
-    </main>
-    <footer>
-        <div class="copy-right ">
-            <p>
-                Copyright <i class="fa fa-copyright " aria-hidden="true "></i>2022.All Rghits Resorved to EnasHQ.
-            </p>
-        </div>
-        <div class="social ">
-            <a href="https://www.facebook.com/enas.alqaadi "> <i class="fa fa-facebook-f "> </i></a>
-            <a href="https://www.instagram.com/enasalqaadi/ "> <i class="fa fa-instagram "></i> </a>
-            <a href="https://github.com/EnasHameedQ "> <i class="fa fa-github "> </i></a>
-        </div>
-    </footer>
+        </main>
+        <footer>
+            <div class="copy-right ">
+                <p>
+                    Copyright <i class="fa fa-copyright " aria-hidden="true "></i>2022.All Rghits Resorved to EnasHQ.
+                </p>
+            </div>
+            <div class="social ">
+                <a href="https://www.facebook.com/enas.alqaadi "> <i class="fa fa-facebook-f "> </i></a>
+                <a href="https://www.instagram.com/enasalqaadi/ "> <i class="fa fa-instagram "></i> </a>
+                <a href="https://github.com/EnasHameedQ "> <i class="fa fa-github "> </i></a>
+            </div>
+        </footer>
 
 
 
 
-    <!-- JS Plugins  -->
-    <!-- <script src="assets/js/move_imag.js "></script> -->
-    <script src="assets/js/darkmode.js "></script>
-    <script src="assets/js/typing.js "></script>
+        <!-- JS Plugins  -->
+        <!-- <script src="assets/js/move_imag.js "></script> -->
+        <script src="assets/js/darkmode.js "></script>
+        <script src="assets/js/typing.js "></script>
 </body>
 
 </html>

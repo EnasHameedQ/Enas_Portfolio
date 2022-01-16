@@ -19,7 +19,7 @@
                         }
                         
                         body {
-                            background-color: var(--forth-color);
+                            background-color: var(--forth-color, #edf7f9);
                         }
                         /* end darkmode */
                         
@@ -75,7 +75,7 @@
                         /* start nav burger and menu */
                         /* nav */
                         
-                        .nav {
+                        nav {
                             display: flex;
                             z-index: 1;
                             height: 64px;
@@ -86,15 +86,28 @@
                             flex-direction: row;
                             flex-wrap: wrap;
                             align-content: center;
-                            justify-content: space-between;
+                            justify-content: space-evenly;
                             align-items: center;
                         }
                         
-                        .nav>.nav-header {
+                        nav button {
+                            margin: 20px 0px;
+                            float: right;
+                            width: 20%;
+                            padding: 10px 20px;
+                            background: var( --primery-color, #016d77);
+                            color: white;
+                            font-size: 17px;
+                            border: 1px solid grey;
+                            border-left: none;
+                            cursor: pointer;
+                        }
+                        
+                        nav>.nav-header {
                             display: inline;
                         }
                         
-                        .nav>.nav-header>.nav-title {
+                        nav>.nav-header>.nav-title {
                             display: inline-block;
                             font-size: 22px;
                             color: var( --forth-color, #6c6876);
@@ -110,31 +123,31 @@
                             letter-spacing: 5px;
                         }
                         
-                        .nav>.nav-btn {
+                        nav>.nav-btn {
                             display: none;
                         }
                         
-                        .nav>.nav-links {
+                        nav>.nav-links {
                             display: inline;
                             float: right;
                             font-size: 18px;
                             padding: 9px;
                         }
                         
-                        .nav>.nav-links>a {
+                        nav>.nav-links>a {
                             display: inline-block;
                             padding: 13px 10px 13px 10px;
                             text-decoration: none;
                             color: #efefef;
                         }
                         
-                        .nav>.nav-links>a:hover {
+                        nav>.nav-links>a:hover {
                             background-color: var(--secondery-color, #83c4be);
                             ;
                             color: black;
                         }
                         
-                        .nav>#nav-check {
+                        nav>#nav-check {
                             display: none;
                         }
                         /* end nav  */
