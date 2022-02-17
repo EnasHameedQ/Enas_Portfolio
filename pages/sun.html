@@ -10,20 +10,27 @@
     <style>
         @keyframes move-sun {
             from {
-                transform: rotate(0deg);
+                left: 0vw;
             }
             to {
-                transform: rotate(90deg);
+                left: 50vw;
             }
         }
         
         @keyframes remove-sun {
             from {
-                transform: rotate(0deg);
+                left: 0vw;
             }
             to {
-                transform: rotate(-180deg);
+                right: 50vw;
             }
+        }
+        
+        body {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: nowrap;
+            flex-direction: row;
         }
         
         .sun {
@@ -31,13 +38,13 @@
             width: 400px;
             height: 400px;
             margin: 200px;
-            animation: move-sun 5s forwards;
+            animation: move-sun 5s backwards;
         }
         
         .sun::before {
             content: "";
             position: absolute;
-            top: -25px;
+            top: -6px;
             left: -25px;
             width: 50px;
             height: 50px;
@@ -50,14 +57,14 @@
             width: 400px;
             height: 400px;
             margin: 200px;
-            animation: remove-sun 5s forwards;
+            animation: remove-sun 5s backwards;
         }
         
         .sunshin::before {
             content: "";
             position: absolute;
             top: 25px;
-            right: 25px;
+            right: -32px;
             width: 50px;
             height: 50px;
             background-color: rgb(247, 212, 16);
