@@ -11,7 +11,7 @@ const initialColors = {
 }
 
 const darkMode = {
-    bg: "#6c6876", // override styles here
+    bg: "#3333338c", // override styles here
 }
 
 const transformKey = key =>
