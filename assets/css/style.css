@@ -521,7 +521,7 @@
                         }
                         
                         .con a {
-                            color: var( --forth-color);
+                            color: var(--third-color);
                             padding-right: 10px;
                         }
                         
