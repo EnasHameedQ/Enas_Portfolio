@@ -1,0 +1,175 @@
+@media  (max-width: 768px) {
+#hamburger-icon , #hamburger-icon ul a {
+display: block;
+}
+.header .container nav ul a {
+display: none;
+}
+.works-content, .services-content ,.edEx {
+    display: grid;
+    grid-template-columns: 2fr ;
+}
+
+                        
+}
+@media (max-width:556.99px) {
+.works-content, .services-content {
+display:grid;
+grid-template-columns:2fr ;
+
+}
+
+}
+
+@media  (max-width:768px) {
+.topnav a {
+padding: 14px 5px;
+}
+.banner {
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+justify-content: space-between;
+align-content: center;
+align-items: flex-start;
+margin-top: -150px;
+}
+.item {
+margin-top: 30px;
+}
+.flip-card {
+margin: 15px;
+width: 240px;
+height: 200px;
+}
+.card1 {
+text-align: center;
+height: 155px;
+padding: 5px;
+margin: 10px;
+font-size: 14px;
+width: 155px;
+}
+.card1 i {
+font-size: 30px;
+display: flex;
+padding-bottom: 25px;
+/* text-align: center; */
+align-content: space-around;
+justify-content: center;
+}
+.services-content {
+display: grid;
+grid-template-columns: 2fr 2fr;
+
+align-items: center;
+align-content: center;
+
+justify-items: center;
+}
+.edEx {
+margin: 10px;
+border-radius: 25px;
+padding: 20px;
+display: flex;
+
+justify-items: start;
+align-items: center;
+flex-direction: column;
+align-content: center;
+}
+.works-content {
+display: grid;
+grid-template-columns:2fr;
+
+}
+.cardss {
+padding-left: 50px;
+display: flex;
+align-content: stretch;
+justify-content: space-evenly;
+flex-direction: row;
+flex-wrap: nowrap;
+align-items: center;
+}
+.title {
+text-align: center;
+padding: 0px 0px 40px 75px;
+}
+.works {
+height: auto;
+padding: 20px;
+}
+.flip-card {
+margin: 15px;
+height: 200px;
+}
+.banner {
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+justify-content: space-between;
+align-content: space-around;
+align-items: center;
+margin-top: 35px;
+}
+}
+
+@media (min-width:768px) and (max-width:991px) {
+.banner .work-title {
+text-align: center;
+padding: 0px 0px 0px 105px;
+}
+.banner {
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+justify-content: space-between;
+align-content: center;
+align-items: flex-start;
+margin-top: 90px;
+}
+.works {
+display: grid;
+height: auto;
+justify-items: center;
+justify-content: center;
+grid-template-columns: 2fr;
+}
+.works-content {
+display: grid;
+grid-template-columns: 2fr   2fr;
+justify-items: center;
+}
+.services-content {
+display: grid;
+grid-template-columns: 2fr 2fr  2fr;
+justify-items: center;
+}
+.flip-card {
+margin: 15px;
+width: 250px;
+}
+h4 {
+text-align: center;
+}
+.cardss {
+width: 770px;
+grid-template-columns: 1fr 1fr;
+display: grid;
+justify-content: end;
+align-items: stretch;
+justify-items: center;
+align-content: center;
+}
+.edEx {
+display: grid;
+grid-template-columns: 6fr;
+justify-items: center;
+}
+.Exp,
+.Edu {
+padding: 15px 80px;
+margin: 10px;
+}
+}

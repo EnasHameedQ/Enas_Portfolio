@@ -1,0 +1,699 @@
+                        * {
+                            box-sizing: border-box;
+                            margin: 0px;
+                            padding: 0px;
+                            scroll-behavior: smooth;
+                            scroll-margin: 0px;
+                        }
+  
+                         :root {
+                            --primery-color: #016d77;
+                            --forth-color: #83c4be;
+                            --third-color: #af5dba;
+                            --secondery-color: #edf7f9;
+                        }
+                        body{
+                           background-color: rgb(3 43 47);
+                             font-size: 20px;
+                        }
+
+      ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+p{
+    line-height: 1.6;
+    font-size: 14px;
+}
+.container {
+    padding: 1rem 2rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+section header h1{
+    font-size: 45px;
+    margin-bottom: 70px;
+    color: var(--primery-color);
+    text-align: center;
+}
+
+/* Header Section */
+.header{
+    background-color:var(--primery-color) ;
+    backdrop-filter: blur(6px);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    z-index: 1000;
+}
+
+header .container > a ,
+footer .container > a{
+    font-weight: 100;
+    font-size: 30px;
+    color: var(--forth-color);
+    letter-spacing: 3px;
+}
+  span{
+    color: rgb(255 255 255 / 51%);
+    margin-right: 3px;
+    font-size: 24px;
+}
+  span i{
+     font-size:18px;
+  }
+
+header .container nav ul li {
+    display: flex;
+    justify-content: space-around;
+    padding-right: 15px;
+}
+header .container nav ul a{
+    color: var(--forth-color);
+ 
+}
+header .container nav ul a:hover{
+    color: var(--secondery-color);
+}
+/* Switch button Style*/
+header .container > div{
+    text-align: right;
+    /*margin-right: 20px;*/
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    margin: 0px 10px;
+}
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--forth-color);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 4px;
+    bottom: 4px;
+   
+      background:var(--secondery-color);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+input:checked+.slider {
+    background-color: var(--secondery-color);
+}
+input:checked + .slider:before{
+    background-color: var(--primery-color);
+}
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+.slider.round:before {
+    border-radius: 50%;
+}
+/* Mobile Menu */
+header .container  .open nav.mobile-menu{
+    background-color: rgb(43 43 43 / 96%);
+    scrollbar-width: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0px;
+    left: 0px;
+    transition: opacity 0.25s ease 0s;
+}
+header .container .open  ul{
+    flex-direction: column;
+    align-items: center;
+    height: inherit;
+    justify-content: center;
+    gap: 40px;
+}
+#hamburger-icon {
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+}
+#hamburger-icon div {
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+.open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+    position: relative;
+    z-index: 1;
+}
+.open .bar2 {
+    opacity: 0;
+}
+.open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+    position: relative;
+    z-index: 1;
+}
+.open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    height: calc(100vh - 50px);
+    width: 100%;
+}
+/*,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,*/
+                       /* light mode */
+.light-mode {
+     background-color:var(--secondery-color);
+}
+ .light-mode footer> .copy-right p{
+ 
+    color:var(--forth-color);
+}
+.light-mode a,
+.light-mode span,.light-mode h2,
+.light-mode li{
+    color:var(--forth-color) !important;
+}
+.light-mode header .container .open nav.mobile-menu {
+    background-color: rgb(241 241 241 / 96%);
+}
+
+.light-mode #hamburger-icon div {
+    background-color: var(--third-color);
+}
+.light-mode .container > a span {
+    color: var(--primery-color) !important;
+}
+.light-mode input,
+.light-mode textarea{
+    border: 1px solid var(--third-color);
+    color: var(--third-color);
+}
+.light-mode .header {
+    background-color: rgb(245 247 249 / 31%);;
+}
+
+.light-mode .services article,
+.light-mode  .portfolio .container article {
+    background-color: rgb(255 255 255 / 51%);;
+    box-shadow: -2px 3px 9px #0000003d;
+}
+
+
+                        /*//////////////////////////////*/
+                        /* end nav  */
+                     section{
+                        height: fit-content;
+                     }
+                     .wave{
+                        height: 15px;
+                        width: 100%;
+                     }
+                        .cover,
+                        .makeflex,
+                        .flip-card>img,
+                        .flip-card-back,
+                        .flip-card-front,
+                        .flip-card,
+                        .card1,
+                        .form {
+                            border-radius: 5px;
+                        }
+                        /* start cover */
+                        
+                        .makeflex {
+                            z-index: 0;
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-around;
+                            flex-wrap: wrap;
+                            padding-top: 100px;
+                        }
+                        
+                        .edEx .item {
+                            margin:2px 0px;
+                        }
+                        
+                        small.sub {
+                            color: var(--third-color);
+                            background-color: var(--forth-color);
+                            padding: 5px;
+                            margin: 5px;
+                            display: inline-block;
+                                font-size: 20px;
+                        }
+                        
+                      .edEx .timeline .item {
+    margin-top: 25px;
+    border-left: 2px solid var(--secondery-color);
+ 
+}
+                        
+                        .content {
+                            padding-left: 10px;
+                        }
+                        
+                        .card3 {
+                               margin-top: 75px;
+                            width: 200px;
+                            height: 200px;
+                            border: none;
+                        }
+                        
+                        .card3 h2 a {
+                            color: #016d77;
+                        }
+                        
+                        .card3 .card_image2 {
+                            width: 225px;
+                            height: 225px;
+                            /* border-radius: 40px; */
+                        }
+                        
+                        .card3 .card_image2 img {
+                            width: inherit;
+                            height: inherit;
+                            /* border-radius: 40px; */
+                        }
+                        
+                        .card3 .card_title {
+                            text-align: center;
+                            font-weight: bold;
+                            font-size: 30px;
+                            margin-right: -20px;
+                            margin-top: -240px;
+                            height: 40px;
+                        }
+                        
+                        .card3 h6 {
+                            font-size: 16px;
+                            padding-top: 1px;
+                        }
+                        
+                        h1.cd-headline.clip {
+                            font-size: 25px;
+                        }
+                        
+                        .cover {
+                            width: 100%;
+                            height: auto;
+                        
+                           /*background-color: var(--forth-color);*/
+                        }
+                        /* end cover  */
+                        
+                        section.aboutme {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-evenly;
+                            align-content: flex-start;
+                            flex-wrap: wrap;
+                            background-color: var(--forth-color,#83c4be);
+                        }
+                        
+                        .social_header {
+                            display: flex;
+                            margin-left: 30px;
+                            flex-wrap: wrap;
+                            align-content: space-around;
+                            justify-content: center;
+                            flex-direction: column;
+                            align-items: flex-start;
+                        }
+                        
+                        .social_header a {
+                            padding: 10px;
+                            text-decoration: none;
+                            text-transform: capitalize;
+                        }
+                        
+                        .item p {
+                            padding-bottom: 10px;
+                            width: 350px;
+                            font-size: 20px;
+                        }
+                        
+                        .banner {
+                            display: flex;
+                            flex-direction: column;
+                            flex-wrap: wrap;
+                            justify-content: space-between;
+                            align-content: center;
+                            align-items: flex-start;
+                            margin-top: 10px;
+                        }
+                        
+                        .banner .item {
+                            margin: 10px 0px;
+                        }
+                     
+                        
+                        .card1 {
+                            text-align: center;
+                            width: 180px;
+                            height: 150px;
+                            background-color: var(--forth-color);
+                            padding: 25px;
+                            margin: 10px;
+                            box-shadow: 0 4px 8px 0 rgb(0 0 0 / 4%), 0 6px 20px 0 rgb(0 0 0 / 10%);
+                        }
+                        
+                        .card1 i {
+                            display: flex;
+                            padding-bottom: 25px;
+                            /* text-align: center; */
+                            align-content: space-around;
+                            justify-content: center;
+                        }
+                        
+                        .card1 h3 {
+                            text-align: center;
+                        }
+                        
+                        .card1 img {
+                            height: 150px;
+                            width: 150px;
+                        }
+                        
+                        .card1 p {
+                            margin-bottom: 20px;
+                        }
+                        
+                        .card1 a {
+                            padding: 2px;
+                            color: #ecf9fe;
+                            background-color: var(--primery-color);
+                        }
+                        /* start works  */
+                       .works-content, .services-content {
+    display: grid;
+    grid-template-columns: 2fr 2fr  2fr;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-evenly;
+    padding: 0px;
+    flex-wrap: wrap;
+    justify-items: center;
+}
+
+                        
+                        .work {
+                            justify-content: center;
+                            text-align: center;
+                            padding: 10px;
+                            width: calc(70%/3);
+                            height: 500px;
+                        }
+                        
+                        .work-title {
+                            text-align: center;
+                            padding: 20px 0px 40px 0px;
+                            margin-top: 10px;
+                                color: var(--secondery-color);
+                        }
+                        /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+                        
+                        .flip-card {
+                            box-shadow: 0 4px 8px 0 rgb(0 0 0 / 4%), 0 6px 20px 0 rgb(0 0 0 / 10%);
+                            background-color: transparent;
+                            width: 300px;
+                            height: 200px;
+                            border: 1px solid var(--forth-color);
+                            perspective: 1000px;
+                            margin-bottom: 10px;
+                            /* Remove this if you don't want the 3D effect */
+                        }
+                        /* This container is needed to position the front and back side */
+                        
+                        .flip-card-inner {
+                            position: relative;
+                            width: 100%;
+                            height: 100%;
+                            text-align: center;
+                            transition: transform 0.8s;
+                            transform-style: preserve-3d;
+                        }
+                        /* Do an horizontal flip when you move the mouse over the flip box container */
+                        
+                        .flip-card:hover .flip-card-inner {
+                            transform: rotateY(180deg);
+                        }
+                        /* Position the front and back side */
+                        
+                        .flip-card-front,
+                        .flip-card-back {
+                            background-color: var(--forth-color);
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            -webkit-backface-visibility: hidden;
+                            /* Safari */
+                            backface-visibility: hidden;
+                        }
+                        /* Style the front side (fallback if image is missing) */
+                        
+                        .flip-card-front h5 {
+                            font-weight: bold;
+                            font-size: 16px;
+                            padding-bottom: 15px;
+                            padding-top: 10px;
+                        }
+                        
+                        .flip-card-front img {
+                            margin-top: -10px;
+                            width: 250px;
+                            max-width: 100%;
+                            height: auto;
+                        }
+                        /* Style the back side */
+                        
+                        .flip-card-back {
+                            background-color: var(--forth-color);
+                            ;
+                            color: var( --forth);
+                            transform: rotateY(180deg);
+                        }
+                        
+                        .flip-card-back p {
+                            padding: 10px;
+                            font-size: 16px;
+                            font-family: sans-serif;
+                        }
+                        /*end works*/
+                        /*  */
+                        /*  */
+                        
+                        .edEx {
+                            margin: 10px;
+                            border-radius: 25px;
+                            padding: 20px;
+                            display: grid;
+                            grid-template-columns: 2fr 2fr;
+                        }
+                        
+                        .Exp,
+                        .Edu {
+                           
+                        
+                            background-color: var(--forth-color);
+                            ;
+                            border-radius: 25px;
+                        
+                            margin: 10px;
+                       
+                        }
+                        
+h5 {
+    padding-top: 15px;
+    text-align: center;
+    font-size: 20px;
+    color: var(--secondery-color);
+}
+                        
+                        h6 {
+                            font-size: 16px;
+                                color: var(--third-color);
+                        }
+                        
+                        .timeline {
+                            margin-top: 10px;
+                            padding-left: 20px;
+                        }
+                        /* end edu/exo */
+                        /* start contuct me */
+                        
+                        .form {
+                            background-color: var(--forth-color);
+                            width: 600px;
+                            padding: 40px;
+                           margin-left: 400px;
+                         
+                            opacity: .8;
+                        }
+                        
+                        input {
+                            height: 35px;
+                        }
+                        
+                        textarea,
+                        input {
+                            margin-top: 20px;
+                            border-radius: 25px;
+                        }
+                        
+                        .material-icons,
+                        .fa {
+                            color: var(--third-color);
+                        }
+                        /* Set a style for the submit button */
+                        
+                        .registerbtn {
+                            background-color: var(--third-color, );
+                            color: var( --forth-color);
+                            padding: 16px 20px;
+                            margin: 8px 0;
+                            border: none;
+                            cursor: pointer;
+                            width: 100%;
+                            opacity: 0.9;
+                        }
+                        
+                        .registerbtn:hover {
+                            opacity: 1;
+                        }
+                        /* end form */
+                        
+                       section.contuct {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-evenly;
+    align-content: space-between;
+    flex-wrap: nowrap;
+    padding: 30px;
+  
+    flex-direction: column;
+}
+                        .con {
+    display: flex;
+    margin-left: 30px;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+                      
+                        
+                        .con a {
+                            color: var(--third-color);
+                            padding-right: 10px;
+                        }
+                        
+                        .cont {
+                            padding-bottom: 30px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            align-content: flex-end;
+                            flex-wrap: nowrap;
+                            flex-direction: row;
+                        }
+                        
+                        .move_img {
+                            height: 500px;
+                            width: 250px;
+                        }
+                        
+                        img#i1 {
+                            height: 100px;
+                            /* width: 200px; */
+                        }
+                        /*end contuct me*/
+                        /* start move */
+                        
+                        section.move {
+                            padding: 30px;
+                        }
+                        /* end move */
+                        
+                        footer {
+                            padding-left: 30px;
+                            padding-right: 30px;
+                            display: flex;
+                            background-color: var( --primery-color);
+                            justify-content: space-between;
+                            height: 100px;
+                            align-items: center;
+                        }
+                        
+                    
+                        .social {
+                            color:var(--forth-color);
+                            margin-right: 100px;
+                        }
+                        
+                        .social .fa {
+                            margin-right: 5px;
+                            /* box-shadow: #737e8a 0px 1px 2px 0px, inset rgb(60 64 67 / 66%) 1px 0px 10px 13px; */
+                            padding: 10px;
+                            display: inline-block;
+                            font: normal normal normal 14px/1 FontAwesome;
+                            font-size: inherit;
+                            text-rendering: auto;
+                            -webkit-font-smoothing: antialiased;
+                            -moz-osx-font-smoothing: grayscale;
+                         
+                            background-color: var( --forth-color);
+                            
+                            border-radius: 40%;
+                        }
+                        
+                       
+                     
