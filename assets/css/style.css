@@ -8,9 +8,9 @@
 
                          :root {
                             --primery-color: #016d77;
-                            --forth-color: #83c4be;
+                           --secondery-color: #edf7f9;
                             --third-color: #af5dba;
-                            --secondery-color: #edf7f9;
+                              --forth-color: #83c4be;
                         }
                         body{
                            background-color: rgb(3 43 47);
@@ -43,7 +43,10 @@ p{
     flex-direction: row;
     justify-content: space-evenly;
 }
-
+.cover .container{
+    padding: 10px 20px;
+    margin: 5px;
+}
 section header h1{
     font-size: 45px;
     margin-bottom: 70px;
@@ -249,7 +252,11 @@ header .container .open  ul{
     box-shadow: -2px 3px 9px #0000003d;
 }
 
-
+ .light-mode .item p {
+    color:var(--primery-color);
+   opacity: 1;
+  
+}
                         /*//////////////////////////////*/
                         /* end nav  */
                      section{
@@ -386,7 +393,6 @@ header .container .open  ul{
                             display: flex;
                             justify-content: space-around;
                             flex-wrap: wrap;
-                            padding-top: 100px;
                         }
 
                         .edEx .item {
@@ -454,49 +460,39 @@ header .container .open  ul{
                         }
 
                         .cover {
+                                margin-top: 100px;
                             width: 100%;
                             height: auto;
 
-                           /*background-color: var(--forth-color);*/
+                          
                         }
-                        /* end cover  */
-
-                        section.aboutme {
-
-                            background-color: var(--forth-color,#83c4be);
-                        }
+                       
 
 
 
-                        .social_header a {
-                            padding: 10px;
-                            text-decoration: none;
-                            text-transform: capitalize;
-                        }
-                        .social_header img{
-                            width: 50px;
-                        }
-                        .item p {
-                            padding: 10px;
 
-                            font-size: 20px;
-                        }
-
-                        .banner {
-                            display: flex;
-                            flex-direction: column;
-                            flex-wrap: wrap;
-                            justify-content: space-between;
-                            align-content: center;
-                            align-items: flex-start;
-                            margin-top: 10px;
-                        }
+                     .item p {
+    color: var(--forth-color);
+    opacity: 50%;
+    padding: 10px;
+    font-size: 20px;
+}
+.banner {
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: flex-start;
+    margin-top: 10px;
+}
 
                         .banner .item {
                             margin: 10px 0px;
                         }
 
-
+ /* end cover  */
                         .card1 {
                             text-align: center;
                             width: 180px;
