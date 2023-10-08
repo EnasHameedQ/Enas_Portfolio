@@ -5,7 +5,7 @@
                             scroll-behavior: smooth;
                             scroll-margin: 0px;
                         }
-  
+
                          :root {
                             --primery-color: #016d77;
                             --forth-color: #83c4be;
@@ -16,7 +16,10 @@
                            background-color: rgb(3 43 47);
                              font-size: 20px;
                         }
-
+svg {
+    fill: none;
+    stroke: var(--secondary-color);
+}
       nav ul{
     display: flex;
     list-style: none;
@@ -82,7 +85,7 @@ header .container nav ul li {
 }
 header .container nav ul a{
     color: var(--forth-color);
- 
+
 }
 header .container nav ul a:hover{
     color: var(--secondery-color);
@@ -122,7 +125,7 @@ header .container > div{
     width: 18px;
     left: 4px;
     bottom: 4px;
-   
+
       background:var(--secondery-color);
     -webkit-transition: .4s;
     transition: .4s;
@@ -213,13 +216,13 @@ header .container .open  ul{
      background-color:var(--secondery-color);
 }
  .light-mode footer> .copy-right p{
- 
+
     color:var(--forth-color);
 }
 .light-mode a,
 .light-mode span,.light-mode h2,
 .light-mode li{
-    color:var(--forth-color) !important;
+    color:var(--third-color) !important;
 }
 .light-mode header .container .open nav.mobile-menu {
     background-color: rgb(241 241 241 / 96%);
@@ -252,6 +255,115 @@ header .container .open  ul{
                      section{
                         height: fit-content;
                      }
+
+                     /*//////////////////////////////
+/* About Section */
+.about .container{
+    grid-template-columns: 45% 50%;
+    gap: 5%;
+    align-items: stretch;
+}
+.technical-skills{
+    display: flex;
+    gap: 20px;
+}
+.technical-skills img{
+    width: 5%;
+}
+.text{
+    padding-top: 0;
+}
+.text > img{
+    width: 100%;
+}
+.text h2{
+    display: inline-block;
+    margin-bottom: 2rem;
+    border-bottom: 0.2rem solid #016FB9;
+    color: var(--main-color);
+}
+.text p{
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.text h3{
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+.text .skill{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    /* flex-wrap: wrap; */
+}
+.text .skill .box{
+    background-color: var(--black);
+    width: 100%;
+    height: 130px;
+    overflow: hidden;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    border: 2px solid #343434;
+    position: relative;
+    z-index: 1;
+}
+.text .skill .box:hover::before{
+    content: '';
+    position: absolute;
+    width: 43%;
+    height: 310%;
+    background: linear-gradient(261deg ,var(--secondary-color),#016FB9);
+    animation: animate 4s ease-in-out infinite;
+    -webkit-animation: animate 4s ease-in-out infinite;
+}
+.text .skill .box::after{
+    content: '';
+    position: absolute;
+    inset: 3px;
+    background-color: var(--black);
+    border-radius: 6px;
+}
+@keyframes animate
+{
+    0%
+    {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(350deg);
+        -webkit-transform: rotate(350deg);
+        -moz-transform: rotate(350deg);
+        -ms-transform: rotate(350deg);
+        -o-transform: rotate(350deg);
+}
+}
+.text .skill .box div,
+.text .skill .box img{
+    position: relative;
+    z-index: 2;
+}
+.text .skill .box img{
+    width: 40px;
+}
+.text .skill .box h4{
+    margin: 0;
+    font-size: 20px
+}
+
+
+
+                     */
                      .wave{
                         height: 15px;
                         width: 100%;
@@ -267,7 +379,7 @@ header .container .open  ul{
                             border-radius: 5px;
                         }
                         /* start cover */
-                        
+
                         .makeflex {
                             z-index: 0;
                             width: 100%;
@@ -276,11 +388,11 @@ header .container .open  ul{
                             flex-wrap: wrap;
                             padding-top: 100px;
                         }
-                        
+
                         .edEx .item {
                             margin:2px 0px;
                         }
-                        
+
                         small.sub {
                             color: var(--third-color);
                             background-color: var(--forth-color);
@@ -289,40 +401,40 @@ header .container .open  ul{
                             display: inline-block;
                                 font-size: 20px;
                         }
-                        
+
                       .edEx .timeline .item {
     margin-top: 25px;
     border-left: 2px solid var(--secondery-color);
- 
+
 }
-                        
+
                         .content {
                             padding-left: 10px;
                         }
-                        
+
                         .card3 {
                                margin-top: 75px;
                             width: 200px;
                             height: 200px;
                             border: none;
                         }
-                        
+
                         .card3 h2 a {
                             color: #016d77;
                         }
-                        
+
                         .card3 .card_image2 {
                             width: 225px;
                             height: 225px;
                             /* border-radius: 40px; */
                         }
-                        
+
                         .card3 .card_image2 img {
                             width: inherit;
                             height: inherit;
                             /* border-radius: 40px; */
                         }
-                        
+
                         .card3 .card_title {
                             text-align: center;
                             font-weight: bold;
@@ -331,55 +443,45 @@ header .container .open  ul{
                             margin-top: -240px;
                             height: 40px;
                         }
-                        
+
                         .card3 h6 {
                             font-size: 16px;
                             padding-top: 1px;
                         }
-                        
+
                         h1.cd-headline.clip {
                             font-size: 25px;
                         }
-                        
+
                         .cover {
                             width: 100%;
                             height: auto;
-                        
+
                            /*background-color: var(--forth-color);*/
                         }
                         /* end cover  */
-                        
+
                         section.aboutme {
-                            display: flex;
-                            align-items: center;
-                            justify-content: space-evenly;
-                            align-content: flex-start;
-                            flex-wrap: wrap;
+
                             background-color: var(--forth-color,#83c4be);
                         }
-                        
-                        .social_header {
-                            display: flex;
-                            margin-left: 30px;
-                            flex-wrap: wrap;
-                            align-content: space-around;
-                            justify-content: center;
-                            flex-direction: column;
-                            align-items: flex-start;
-                        }
-                        
+
+
+
                         .social_header a {
                             padding: 10px;
                             text-decoration: none;
                             text-transform: capitalize;
                         }
-                        
+                        .social_header img{
+                            width: 50px;
+                        }
                         .item p {
                             padding: 10px;
-                          
+
                             font-size: 20px;
                         }
-                        
+
                         .banner {
                             display: flex;
                             flex-direction: column;
@@ -389,12 +491,12 @@ header .container .open  ul{
                             align-items: flex-start;
                             margin-top: 10px;
                         }
-                        
+
                         .banner .item {
                             margin: 10px 0px;
                         }
-                     
-                        
+
+
                         .card1 {
                             text-align: center;
                             width: 180px;
@@ -404,7 +506,7 @@ header .container .open  ul{
                             margin: 10px;
                             box-shadow: 0 4px 8px 0 rgb(0 0 0 / 4%), 0 6px 20px 0 rgb(0 0 0 / 10%);
                         }
-                        
+
                         .card1 i {
                             display: flex;
                             padding-bottom: 25px;
@@ -412,20 +514,20 @@ header .container .open  ul{
                             align-content: space-around;
                             justify-content: center;
                         }
-                        
+
                         .card1 h3 {
                             text-align: center;
                         }
-                        
+
                         .card1 img {
                             height: 150px;
                             width: 150px;
                         }
-                        
+
                         .card1 p {
                             margin-bottom: 20px;
                         }
-                        
+
                         .card1 a {
                             padding: 2px;
                             color: #ecf9fe;
@@ -444,7 +546,7 @@ header .container .open  ul{
     justify-items: center;
 }
 
-                        
+
                         .work {
                             justify-content: center;
                             text-align: center;
@@ -452,7 +554,7 @@ header .container .open  ul{
                             width: calc(70%/3);
                             height: 500px;
                         }
-                        
+
                         .work-title {
                             text-align: center;
                             padding: 20px 0px 40px 0px;
@@ -460,7 +562,7 @@ header .container .open  ul{
                                 color: var(--secondery-color);
                         }
                         /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
-                        
+
                         .flip-card {
                             box-shadow: 0 4px 8px 0 rgb(0 0 0 / 4%), 0 6px 20px 0 rgb(0 0 0 / 10%);
                             background-color: transparent;
@@ -472,7 +574,7 @@ header .container .open  ul{
                             /* Remove this if you don't want the 3D effect */
                         }
                         /* This container is needed to position the front and back side */
-                        
+
                         .flip-card-inner {
                             position: relative;
                             width: 100%;
@@ -482,12 +584,12 @@ header .container .open  ul{
                             transform-style: preserve-3d;
                         }
                         /* Do an horizontal flip when you move the mouse over the flip box container */
-                        
+
                         .flip-card:hover .flip-card-inner {
                             transform: rotateY(180deg);
                         }
                         /* Position the front and back side */
-                        
+
                         .flip-card-front,
                         .flip-card-back {
                             background-color: var(--forth-color);
@@ -499,14 +601,14 @@ header .container .open  ul{
                             backface-visibility: hidden;
                         }
                         /* Style the front side (fallback if image is missing) */
-                        
+
                         .flip-card-front h5 {
                             font-weight: bold;
                             font-size: 16px;
                             padding-bottom: 15px;
                             padding-top: 10px;
                         }
-                        
+
                         .flip-card-front img {
                             margin-top: -10px;
                             width: 250px;
@@ -514,14 +616,14 @@ header .container .open  ul{
                             height: auto;
                         }
                         /* Style the back side */
-                        
+
                         .flip-card-back {
                             background-color: var(--forth-color);
                             ;
                             color: var( --forth);
                             transform: rotateY(180deg);
                         }
-                        
+
                         .flip-card-back p {
                             padding: 10px;
                             font-size: 16px;
@@ -530,7 +632,7 @@ header .container .open  ul{
                         /*end works*/
                         /*  */
                         /*  */
-                        
+
                         .edEx {
                             margin: 10px;
                             border-radius: 25px;
@@ -538,63 +640,63 @@ header .container .open  ul{
                             display: grid;
                             grid-template-columns: 2fr 2fr;
                         }
-                        
+
                         .Exp,
                         .Edu {
-                           
-                        
+
+
                             background-color: var(--forth-color);
                             ;
                             border-radius: 25px;
-                        
+
                             margin: 10px;
-                       
+
                         }
-                        
+
 h5 {
     padding-top: 15px;
     text-align: center;
     font-size: 20px;
     color: var(--secondery-color);
 }
-                        
+
                         h6 {
                             font-size: 16px;
                                 color: var(--third-color);
                         }
-                        
+
                         .timeline {
                             margin-top: 10px;
                             padding-left: 20px;
                         }
                         /* end edu/exo */
                         /* start contuct me */
-                        
+
                         .form {
                             background-color: var(--forth-color);
                             width: 600px;
                             padding: 40px;
                            margin-left: 400px;
-                         
+
                             opacity: .8;
                         }
-                        
+
                         input {
                             height: 35px;
                         }
-                        
+
                         textarea,
                         input {
                             margin-top: 20px;
                             border-radius: 25px;
                         }
-                        
+
                         .material-icons,
                         .fa {
                             color: var(--third-color);
                         }
                         /* Set a style for the submit button */
-                        
+
                         .registerbtn {
                             background-color: var(--third-color, );
                             color: var( --forth-color);
@@ -605,12 +707,12 @@ h5 {
                             width: 100%;
                             opacity: 0.9;
                         }
-                        
+
                         .registerbtn:hover {
                             opacity: 1;
                         }
                         /* end form */
-                        
+
                        section.contuct {
     display: flex;
     align-items: stretch;
@@ -618,7 +720,7 @@ h5 {
     align-content: space-between;
     flex-wrap: nowrap;
     padding: 30px;
-  
+
     flex-direction: column;
 }
                         .con {
@@ -628,13 +730,13 @@ h5 {
     flex-direction: row;
     flex-wrap: nowrap;
 }
-                      
-                        
+
+
                         .con a {
                             color: var(--third-color);
                             padding-right: 10px;
                         }
-                        
+
                         .cont {
                             padding-bottom: 30px;
                             display: flex;
@@ -644,24 +746,24 @@ h5 {
                             flex-wrap: nowrap;
                             flex-direction: row;
                         }
-                        
+
                         .move_img {
                             height: 500px;
                             width: 250px;
                         }
-                        
+
                         img#i1 {
                             height: 100px;
                             /* width: 200px; */
                         }
                         /*end contuct me*/
                         /* start move */
-                        
+
                         section.move {
                             padding: 30px;
                         }
                         /* end move */
-                        
+
                         footer {
                             padding-left: 30px;
                             padding-right: 30px;
@@ -671,13 +773,13 @@ h5 {
                             height: 100px;
                             align-items: center;
                         }
-                        
-                    
+
+
                         .social {
                             color:var(--forth-color);
                             margin-right: 100px;
                         }
-                        
+
                         .social .fa {
                             margin-right: 5px;
                             /* box-shadow: #737e8a 0px 1px 2px 0px, inset rgb(60 64 67 / 66%) 1px 0px 10px 13px; */
@@ -688,11 +790,8 @@ h5 {
                             text-rendering: auto;
                             -webkit-font-smoothing: antialiased;
                             -moz-osx-font-smoothing: grayscale;
-                         
+
                             background-color: var( --forth-color);
-                            
+
                             border-radius: 40%;
                         }
-                        
-                       
-                     
