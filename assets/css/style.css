@@ -535,11 +535,8 @@ header .container .open  ul{
 
                             margin: 10px;
 
-                        }
- .Edupar {
-    color: var(--primery-color);
-    opacity: 1;
-  }
+                        
+
 h5 {
     padding-top: 15px;
     text-align: center;
@@ -557,8 +554,12 @@ h5 {
                             padding-left: 20px;
                         }
                         .timeline >div {
-    padding-bottom: 20px;
-}
+                         padding-bottom: 20px;
+                        }
+                         .Exp .timeline .Edupar,.Edu .timeline .Edupar {
+                            color: var(--primery-color);
+                            opacity: 1;
+                            }
                         /* end edu/exo */
                         /* start contuct me */
 
