@@ -676,8 +676,6 @@ h5 {
                             text-rendering: auto;
                             -webkit-font-smoothing: antialiased;
                             -moz-osx-font-smoothing: grayscale;
-
-                            background-color: var( --forth-color);
-
+                            background-color: var(--forth-color);
                             border-radius: 40%;
                         }
